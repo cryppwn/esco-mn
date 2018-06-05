@@ -58,7 +58,7 @@ EOF
 fi
 
 print_msg "Launching Docker container\n"
-#docker run -d --name $MN_NAME -v $DIR:/root/.Escrow -p $PORT:8018 -p $RPC_PORT:8017 cryppwn/esco-mn
+docker run -d --name $MN_NAME -v $DIR:/root/.Escrow -p $PORT:8018 -p $RPC_PORT:8017 cryppwn/esco-mn
 
 print_msg "Check for the container running using 'docker ps -a'"
 
