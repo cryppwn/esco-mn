@@ -12,13 +12,13 @@ print_msg() {
 
 print_msg "Beginning Escrow Coin (ESCO) Masternode creation\n"
 
-read -p "What name would you like to give to this masternode (default mn1)? " mn_name
-read -p "Masternode RPC port (default 7001): " rpc_port
-read -p "Masternode port (default 8001): " port
-read -p "Masternode RPC user (default escorpc): " rpc_user
-read -p "Masternode RPC password (default randomly generated): " rpc_password
-read -p "Masternode generated private key: (no default) " priv_key
-read -p "VPS public IP address: (default from 'hostname --ip-address') " ip
+read -ep "What name would you like to give to this masternode (default mn1)? " mn_name
+read -ep "Masternode RPC port (default 7001): " rpc_port
+read -ep "Masternode port (default 8001): " port
+read -ep "Masternode RPC user (default escorpc): " rpc_user
+read -ep "Masternode RPC password (default randomly generated): " rpc_password
+read -ep "Masternode generated private key: (no default) " priv_key
+read -ep "VPS public IP address: (default from 'hostname --ip-address') " ip
 
 MN_NAME=${mn_name:-mn1}
 
